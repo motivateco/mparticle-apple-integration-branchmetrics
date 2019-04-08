@@ -29,7 +29,7 @@ extern void MPKitBranchMetricsLoadClass(void)
 @interface MPKitBranchMetrics : NSObject <MPKitProtocol>
 
 // mParticle version 7 start:
-- (MPKitExecStatus *)didFinishLaunchingWithConfiguration:(NSDictionary*_Nonnull)configuration;
+- (nonnull MPKitExecStatus *)didFinishLaunchingWithConfiguration:(nonnull NSDictionary *)configuration;
 
 @property (nonatomic, strong, nonnull) NSDictionary *configuration;
 @property (nonatomic, strong, nonnull) NSDictionary *launchOptions;

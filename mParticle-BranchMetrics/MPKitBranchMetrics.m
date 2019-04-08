@@ -50,7 +50,7 @@ NSString *const ekBMAEnableAppleSearchAds = @"enableAppleSearchAds";
 - (instancetype _Nonnull) init NS_DESIGNATED_INITIALIZER;
 
 // Version 7 Start:
-- (MPKitExecStatus*_Nonnull)didFinishLaunchingWithConfiguration:(nonnull NSDictionary *)configuration;
+- (nonnull MPKitExecStatus *)didFinishLaunchingWithConfiguration:(nonnull NSDictionary *)configuration;
 
 - (void)start;
 
@@ -114,7 +114,7 @@ static BOOL _appleSearchAdsDebugMode;
     return self;
 }
 
-- (MPKitExecStatus*_Nonnull)didFinishLaunchingWithConfiguration:(NSDictionary *)configuration {
+- (nonnull MPKitExecStatus *)didFinishLaunchingWithConfiguration:(nonnull NSDictionary *)configuration {
     self.configuration = configuration;
     NSString *branchKey = configuration[ekBMAppKey];
     if (!branchKey) {
